@@ -1,4 +1,4 @@
-class Solution {
+class Problem26RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {
         
         int[] filteredArr = new int[nums.length];
