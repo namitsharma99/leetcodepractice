@@ -1,4 +1,4 @@
-class 933NumberOfRecentCalls {
+class Problem933NumberOfRecentCalls {
 
     Queue<Integer> queue;
 
