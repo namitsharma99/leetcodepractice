@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class 872LeafSimilarTrees {
+class Problem872LeafSimilarTrees {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
         
         List<Integer> l1 = new ArrayList();
