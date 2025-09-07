@@ -1,0 +1,28 @@
+class Problem387FirstUniqueCharacterInAString {
+
+    public int firstUniqChar(String str) {
+
+        // String str = "apple";
+
+        char[] arr = str.toCharArray();
+
+        Map<Character, Integer> map = new LinkedHashMap<>();
+
+
+        for (int i = 0; i< arr.length; i++) {
+            map.put(arr[i], map.getOrDefault(arr[i],0)+1);
+        }
+
+        for (Character c: map.keySet()) {
+            if (map.get(c) == 1) {
+                // System.out.println(c);
+                // System.out.println(str.indexOf(c));
+                return str.indexOf(c);
+            }
+        }
+
+        // System.out.println("Nothing...");
+        return -1;
+        
+    }
+}
