@@ -1,0 +1,18 @@
+class Problem231PowerOfTwo {
+
+    public boolean isPowerOfTwo(int n) {
+
+        if (n <= 0)
+            return false;
+
+        while (n != 0) {
+            int endBit = n & 1;
+            n = n >> 1;
+            if (endBit == 1 && n > 0)
+                return false;
+        }
+
+        return true;
+        
+    }
+}
